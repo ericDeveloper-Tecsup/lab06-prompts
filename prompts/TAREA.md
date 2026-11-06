@@ -91,7 +91,37 @@ Cumplimiento de requisitos académicos.
 Salida estructurada y fácil de evaluar.
 
 ## Componentes del prompt final
- 
+
+
+| Componente | Texto de mi prompt |
+|-------|------------|
+|Rol|Eres un desarrollador Java senior especializado en Programación Orientada a Objetos|
+|Contexto|El programa será utilizado por estudiantes que están aprendiendo estructuras de datos y POO|
+|Instrucción|Genera un programa completo en Java que implemente un CRUD de productos para una tienda virtual.|
+|Formato|Explica la solución, muestra diagrama, código, comentarios y ejemplo de ejecución|
+|Ejemplo|ID: 1, Nombre: Laptop, Precio: 3500.00|
+|Restricción|No uses librerías externas ni bases de datos|
+
+
 ## Evaluacion del resultado
  
+ | Criterio | Prompt vago | Prompt estructurado |
+|----------|-------------|---------------------|
+| Incluye operaciones CRUD completas |No |Si |
+| Utiliza Programación Orientada a Objetos |Si | Si|
+| Cumple la restricción de no usar librerías externas |No |Si |
+| Presenta un formato estructurado de respuesta |No | Si|
+| Incluye ejemplos de productos |No |Si |
+| Explica el funcionamiento del programa |Si |Si |
+
 ## Errores que evite
+
+### Como los evite
+
+ **Ser demasiado general**
+
+En la primera versión del prompt solo pedía "crear un programa para administrar productos", lo que producía respuestas ambiguas. En las siguientes versiones especifiqué que debía ser un CRUD de productos, desarrollado en Java, utilizando Programación Orientada a Objetos y ejecutándose en consola.
+
+**No indicar el formato**
+
+En el prompt final definí claramente cómo debía presentarse la respuesta: explicación de la solución, diagrama de clases, código completo, comentarios y ejemplo de ejecución. Esto permitió obtener una respuesta ordenada y fácil de evaluar.
